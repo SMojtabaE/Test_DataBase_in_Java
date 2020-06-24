@@ -15,7 +15,7 @@ public class DataBase {
     public static void makeconection(){
         try {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test"
-                    ,"root","9731");
+                    ,"username_of_database","password_of_database");
             statement = connection.createStatement();
         } catch (SQLException e) {
             e.printStackTrace();
